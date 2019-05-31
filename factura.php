@@ -3,12 +3,15 @@
 use Greenter\Model\Client\Client;
 use Greenter\Model\Company\Company;
 use Greenter\Model\Company\Address;
+use Greenter\Model\Response\BillResult;
 use Greenter\Model\Sale\Invoice;
 use Greenter\Model\Sale\SaleDetail;
 use Greenter\Model\Sale\Legend;
+use Greenter\See;
 
 require __DIR__.'/vendor/autoload.php';
 
+/**@var $see See*/
 $see = require __DIR__.'/config.php';
 
 // Cliente
@@ -61,7 +64,7 @@ $item = (new SaleDetail())
     ->setTotalImpuestos(18.00)
     ->setMtoValorVenta(100.00)
     ->setMtoValorUnitario(50.00)
-    ->setMtoPrecioUnitario(56.00);
+    ->setMtoPrecioUnitario(59.00);
 
 $legend = (new Legend())
     ->setCode('1000')
@@ -72,8 +75,17 @@ $invoice->setDetails([$item])
 
 $result = $see->send($invoice);
 
-if ($result->isSuccess()) {
-    echo $result->getCdrResponse()->getDescription();
-} else {
+// Guardar XML
+file_put_contents($invoice->getName().'.xml',
+                  $see->getFactory()->getLastXml());
+
+if (!$result->isSuccess()) {
     var_dump($result->getError());
+    exit();
 }
+
+/**@var $result BillResult*/
+echo $result->getCdrResponse()->getDescription();
+
+// Guardar CDR
+file_put_contents('R-'.$invoice->getName().'.zip', $result->getCdrZip());
