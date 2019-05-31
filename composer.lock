@@ -1,23 +1,23 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
     "content-hash": "fe86be25e185fdf1d2972afaa1b74ecc",
     "packages": [
         {
             "name": "greenter/core",
-            "version": "v2.1.0",
+            "version": "v2.1.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/giansalex/greenter-core.git",
-                "reference": "536ba0c824f654edc46385cc3b2ce369bc44d165"
+                "reference": "024d6db507968f56af906e21a026d0c0d8fe9af1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/giansalex/greenter-core/zipball/536ba0c824f654edc46385cc3b2ce369bc44d165",
-                "reference": "536ba0c824f654edc46385cc3b2ce369bc44d165",
+                "url": "https://api.github.com/repos/giansalex/greenter-core/zipball/024d6db507968f56af906e21a026d0c0d8fe9af1",
+                "reference": "024d6db507968f56af906e21a026d0c0d8fe9af1",
                 "shasum": ""
             },
             "require": {
@@ -46,7 +46,7 @@
                 "greenter",
                 "sunat"
             ],
-            "time": "2018-10-14T19:09:59+00:00"
+            "time": "2019-03-17T18:08:27+00:00"
         },
         {
             "name": "greenter/greenter",
@@ -101,25 +101,28 @@
         },
         {
             "name": "greenter/ws",
-            "version": "v2.1.0",
+            "version": "v2.2.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/giansalex/greenter-ws.git",
-                "reference": "d986f95d7bf595db2957ba57dc14b30c0fe28a9c"
+                "reference": "689bc91685b8367b20e9cc2ab6dc9da1ff9c3ca9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/giansalex/greenter-ws/zipball/d986f95d7bf595db2957ba57dc14b30c0fe28a9c",
-                "reference": "d986f95d7bf595db2957ba57dc14b30c0fe28a9c",
+                "url": "https://api.github.com/repos/giansalex/greenter-ws/zipball/689bc91685b8367b20e9cc2ab6dc9da1ff9c3ca9",
+                "reference": "689bc91685b8367b20e9cc2ab6dc9da1ff9c3ca9",
                 "shasum": ""
             },
             "require": {
+                "ext-dom": "*",
                 "ext-soap": "*",
                 "ext-zip": "*",
+                "ext-zlib": "*",
                 "greenter/core": "^2.1",
                 "php": ">=5.5.9"
             },
             "require-dev": {
+                "mockery/mockery": "^1.2",
                 "phpunit/phpunit": ">=4.8 < 6.0"
             },
             "type": "library",
@@ -147,20 +150,20 @@
                 "sunat",
                 "webservices"
             ],
-            "time": "2018-10-14T21:46:17+00:00"
+            "time": "2019-04-08T23:53:12+00:00"
         },
         {
             "name": "greenter/xml",
-            "version": "v2.1.0",
+            "version": "v2.1.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/giansalex/greenter-xml.git",
-                "reference": "9744b8951f276ea6d10b9c8cfe8293f0c703a1f0"
+                "reference": "7549af81d6af121aac19e21f3ef80067b2b061f5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/giansalex/greenter-xml/zipball/9744b8951f276ea6d10b9c8cfe8293f0c703a1f0",
-                "reference": "9744b8951f276ea6d10b9c8cfe8293f0c703a1f0",
+                "url": "https://api.github.com/repos/giansalex/greenter-xml/zipball/7549af81d6af121aac19e21f3ef80067b2b061f5",
+                "reference": "7549af81d6af121aac19e21f3ef80067b2b061f5",
                 "shasum": ""
             },
             "require": {
@@ -170,7 +173,7 @@
             },
             "require-dev": {
                 "greenter/data": "dev-master",
-                "greenter/ubl-validator": "^1.0",
+                "greenter/ubl-validator": "^2.0",
                 "phpunit/phpunit": ">=4.8 < 6.0"
             },
             "type": "library",
@@ -196,27 +199,26 @@
                 "greenter",
                 "xml"
             ],
-            "time": "2018-10-14T21:41:11+00:00"
+            "time": "2019-05-18T01:08:11+00:00"
         },
         {
             "name": "greenter/xmldsig",
-            "version": "v5.0.1",
+            "version": "v5.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/giansalex/xmldsig.git",
-                "reference": "b44e9dd38128209b12647bc4f973d360887f9a3e"
+                "reference": "fc71824f105d7370b6be84d62ad40f17fa989603"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/giansalex/xmldsig/zipball/b44e9dd38128209b12647bc4f973d360887f9a3e",
-                "reference": "b44e9dd38128209b12647bc4f973d360887f9a3e",
+                "url": "https://api.github.com/repos/giansalex/xmldsig/zipball/fc71824f105d7370b6be84d62ad40f17fa989603",
+                "reference": "fc71824f105d7370b6be84d62ad40f17fa989603",
                 "shasum": ""
             },
             "require": {
+                "ext-dom": "*",
+                "ext-openssl": "*",
                 "php": ">=5.5.9"
-            },
-            "suggest": {
-                "ext-openssl": "The OpenSsl Extension"
             },
             "type": "library",
             "autoload": {
@@ -237,20 +239,20 @@
                 "xml",
                 "xmldsig"
             ],
-            "time": "2018-03-11T18:10:47+00:00"
+            "time": "2019-05-29T21:00:57+00:00"
         },
         {
             "name": "symfony/polyfill-ctype",
-            "version": "v1.9.0",
+            "version": "v1.11.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/polyfill-ctype.git",
-                "reference": "e3d826245268269cd66f8326bd8bc066687b4a19"
+                "reference": "82ebae02209c21113908c229e9883c419720738a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/polyfill-ctype/zipball/e3d826245268269cd66f8326bd8bc066687b4a19",
-                "reference": "e3d826245268269cd66f8326bd8bc066687b4a19",
+                "url": "https://api.github.com/repos/symfony/polyfill-ctype/zipball/82ebae02209c21113908c229e9883c419720738a",
+                "reference": "82ebae02209c21113908c229e9883c419720738a",
                 "shasum": ""
             },
             "require": {
@@ -262,7 +264,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.9-dev"
+                    "dev-master": "1.11-dev"
                 }
             },
             "autoload": {
@@ -295,35 +297,35 @@
                 "polyfill",
                 "portable"
             ],
-            "time": "2018-08-06T14:22:27+00:00"
+            "time": "2019-02-06T07:57:58+00:00"
         },
         {
             "name": "twig/twig",
-            "version": "v1.35.4",
+            "version": "v1.42.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/twigphp/Twig.git",
-                "reference": "7e081e98378a1e78c29cc9eba4aefa5d78a05d2a"
+                "reference": "2983fcf2e20a4afe95f07e61d89a7590b3c8df2e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/twigphp/Twig/zipball/7e081e98378a1e78c29cc9eba4aefa5d78a05d2a",
-                "reference": "7e081e98378a1e78c29cc9eba4aefa5d78a05d2a",
+                "url": "https://api.github.com/repos/twigphp/Twig/zipball/2983fcf2e20a4afe95f07e61d89a7590b3c8df2e",
+                "reference": "2983fcf2e20a4afe95f07e61d89a7590b3c8df2e",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.3.3",
+                "php": ">=5.4.0",
                 "symfony/polyfill-ctype": "^1.8"
             },
             "require-dev": {
                 "psr/container": "^1.0",
                 "symfony/debug": "^2.7",
-                "symfony/phpunit-bridge": "^3.3"
+                "symfony/phpunit-bridge": "^3.4.19|^4.1.8|^5.0"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.35-dev"
+                    "dev-master": "1.42-dev"
                 }
             },
             "autoload": {
@@ -361,7 +363,7 @@
             "keywords": [
                 "templating"
             ],
-            "time": "2018-07-13T07:12:17+00:00"
+            "time": "2019-05-31T06:20:05+00:00"
         }
     ],
     "packages-dev": [],
