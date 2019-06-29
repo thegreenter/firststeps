@@ -3,5 +3,6 @@
 
 ## Ejecutar
 ```
+composer install
 php factura.php
 ```
