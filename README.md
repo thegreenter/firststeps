@@ -1,8 +1,8 @@
-# Greenter - Primeros Pasos
- Este código de ejemplo emplea la version **UBL 2.1** empleando [Greenter](https://github.com/giansalex/greenter).
+# Primeros Pasos (Greenter)
+Ejemplo básico de creación de una factura electrónica con [Greenter](https://github.com/giansalex/greenter) según el estandar **UBL 2.1**.
 
 ## Ejecutar
-```
+```bash
 composer install
 php factura.php
 ```
