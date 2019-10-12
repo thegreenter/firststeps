@@ -49,6 +49,7 @@ $invoice = (new Invoice())
     ->setMtoIGV(18.00)
     ->setTotalImpuestos(18.00)
     ->setValorVenta(100.00)
+    ->setSubTotal(118.00)
     ->setMtoImpVenta(118.00)
     ->setCompany($company);
 
