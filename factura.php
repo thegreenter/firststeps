@@ -86,7 +86,7 @@ if (!$result->isSuccess()) {
 }
 
 /**@var $result BillResult*/
-echo $result->getCdrResponse()->getDescription();
+echo $result->getCdrResponse()->getDescription().PHP_EOL;
 
 // Guardar CDR
 file_put_contents('R-'.$invoice->getName().'.zip', $result->getCdrZip());
