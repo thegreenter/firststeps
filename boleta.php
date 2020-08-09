@@ -1,5 +1,6 @@
-
 <?php
+
+declare(strict_types=1);
 
 use Greenter\Model\Client\Client;
 use Greenter\Model\Company\Company;
