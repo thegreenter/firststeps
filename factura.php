@@ -5,6 +5,7 @@ declare(strict_types=1);
 use Greenter\Model\Client\Client;
 use Greenter\Model\Company\Company;
 use Greenter\Model\Company\Address;
+use Greenter\Model\Sale\FormaPagos\FormaPagoContado;
 use Greenter\Model\Sale\Invoice;
 use Greenter\Model\Sale\SaleDetail;
 use Greenter\Model\Sale\Legend;
@@ -44,7 +45,8 @@ $invoice = (new Invoice())
     ->setTipoDoc('01') // Factura - Catalog. 01
     ->setSerie('F001')
     ->setCorrelativo('1')
-    ->setFechaEmision(new DateTime('2020-08-24 13:05:00'))
+    ->setFechaEmision(new DateTime('2020-08-24 13:05:00-05:00'))
+    ->setFormaPago(new FormaPagoContado())
     ->setTipoMoneda('PEN') // Sol - Catalog. 02
     ->setCompany($company)
     ->setClient($client)
