@@ -2,6 +2,8 @@
     "name": "greenter/firststeps",
     "description": "Ejemplo de inicio utilizado en greenter.dev",
     "require": {
-        "greenter/lite": "^4.3"
-    }
+        "greenter/lite": "^5.0"
+    },
+    "prefer-stable": true,
+    "minimum-stability": "dev"
 }
